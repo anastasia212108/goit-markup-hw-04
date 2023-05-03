@@ -32,17 +32,17 @@ Base styles
 ==============================*/
 body {
   font-family: var(--primary-font);
-  font-style: normal;
   letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-slate);
   background-color: var(--color-white);
-  width: 1440px;
 }
 .list {
   list-style: none;
   color: var(--color-navy-blue);
+  padding: 0;
+  margin: 0;
 }
 .title {
   font-weight: 500;
@@ -50,13 +50,11 @@ body {
   line-height: 1.2;
   color: var(--color-navy-blue);
   letter-spacing: 0.02em;
-  width: 264px;
   margin-bottom: 8px;
 }
 
 .subtitle {
   color: var(--color-slate);
-  width: 264px;
 }
 .link {
   text-decoration: none;
@@ -181,7 +179,6 @@ Header styles
   color: var(--color-ocean);
 }
 .mail {
-  margin-right: 40px;
 }
 .tel {
   margin-right: 0;
@@ -191,7 +188,6 @@ Hero styles
 ==============================*/
 .hero {
   background-color: var(--color-navy-blue);
-  width: 1440px;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -237,6 +233,19 @@ Feature styles
 ==============================*/
 .feature {
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .feature-list {
   display: flex;
   gap: 24px;
@@ -256,6 +265,7 @@ Feature styles
 We doing styles
 ==============================*/
 .doing {
+  padding-top: 0;
 }
 .doing-title {
   font-weight: 700;
